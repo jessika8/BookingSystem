@@ -1,52 +1,52 @@
-import React, {Component} from 'react';
+import React from 'react';
+import '../src/App.css';
+
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import Nav from './components/Nav'
 import Calendar from 'react-calendar';
-import DayCalendar from './components/DayCalendar';
-// import BookingSpecs from './components/BookingSpecs';
-import 'bootstrap/dist/css/bootstrap.min.css';
-// import {Button} from 'react-bootstrap'
-//import DateSystem from './DateSystem';
-import './App.css';
+import BookingSystem from './BookingSystem';
 
-class App extends Component{
-  state = {
-    
-    date: new Date(),
-  }
+import About from './components/About'
+import Facilities from './components/Facilities'
 
-  onChange = (date) => {
-    this.setState({date})
-    console.log(date)
-  }
+import NewsInfo from './components/NewsInfo';
 
-  render(){
 
+
+class App extends React.Component{
+  render() {
     return(
-
-    
-      <div className="App">
+    <BrowserRouter>
+      <div className="all">
+      <div className='h1'>
         <h1>Welcome to our booking System</h1>
-          <div>
-            {/* this need review  */}
-              <Calendar
-                  onChange={this.onChange}
-                  value={this.state.date}
-                />
-            </div>
-            <div>
-            <DayCalendar/>
-            </div>
-            
-            <div>
-            {/* <BookingSpecs/> */}
-            </div>
-          {/* <Calender/> */}
-          {/* <RoomOne/> */}
-          {/* <RoomTwo/> */}
-          {/* <RoomThree/> */}
         </div>
-
+        <div>
+        <div className="navNav">
+        <Nav/>
+        </div>
+        <Switch>
+          <Route exact path="/" render={()=> <NewsInfo/>}/>
+          <Route path="/about">
+              <About/>
+          </Route>
+          <Route path="/calendar">
+          <div className="calendar">
+            <Calendar />
+          </div>
+          </Route>
+          <Route path="/bookingSystem">
+            <BookingSystem/>
+          </Route>
+          <Route path="/facilities">
+            <Facilities/>
+            {/* <CardsInfoSystem/> */}
+          </Route>
+        </Switch>
+        </div>
+      </div>
+    </BrowserRouter>
     )
   }
-
 }
 export default App;

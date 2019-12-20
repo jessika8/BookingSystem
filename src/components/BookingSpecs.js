@@ -9,30 +9,31 @@ export default class BookingSpecs extends Component {
 
 
       return <div>
-      <form onSubmit={this.handleSubmit}>
-       <h1>Hello</h1>
-       <p>Enter your full name:</p>
+      <form className='form' onSubmit={this.handleSubmit}>
+       <h1>Hello! Let us know some details:</h1>
+       <p></p>
+       <div className='input1' >
        <input
-      //  value={fullName}
-         type="text" placeholder="Your full name" name="fullName" value={this.props.fullname}  onChange={this.props.handleInputChange}
+      //  value={fullName}   style={inputStyle} 
+         type="text" placeholder="Your full name:" name="fullName" value={this.props.fullname}  onChange={this.props.handleInputChange}
        />
-       <p>Name of the meeting:</p>
+       </div>
+       <p></p>
         <input
-         type="text" name="meetingName" value={this.props.meetingName}  onChange={this.props.handleInputChange}
+         type="text" placeholder='Name of the meeting:' name="meetingName" value={this.props.meetingName}  onChange={this.props.handleInputChange}
        />
-       <p>Number of people:</p>
+       <p></p>
         <input
-         type="text" name="numberOfPeople" value={this.props.numberOfPeople}  onChange={this.props.handleInputChange}
+         type="text" placeholder='Number of people:' name="numberOfPeople" value={this.props.numberOfPeople}  onChange={this.props.handleInputChange}
        />
-       <p>Duration:</p>
+       <p></p>
         <input
-         type="text" name="duration" value={this.props.duration}  onChange={this.props.handleInputChange}
+         type="text" placeholder='Duration: min\h' name="duration" value={this.props.duration}  onChange={this.props.handleInputChange}
        />
+
       </form>
-      <button onClick={this.props.hideForm} >Confirm</button>
+      <button onClick={this.props.hideForm} style={{backgroundColor: "gray"}}>Confirm</button>
       </div>
     }
   
   }
-
-
