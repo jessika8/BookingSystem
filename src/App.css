@@ -73,6 +73,15 @@ li {
 .roomName {
   font-size: 3vh;
 }
+.aboutBody {
+  text-align: center;
+}
+.bookingSystemBody, .homePageBody, .aboutPageBody, .calendarBody, .bookingSystemBodyBody, .facilitesBody, .additionalBody {
+  border-style: solid;
+  margin-top: 3vh;
+  width: 90vw;
+  margin-left: 10vh
+}
 @media only screen and (max-width: 450px) {
 
 

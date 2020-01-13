@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/BookingSystem/static/css/main.21ccca88.chunk.css",
+    "main.js": "/BookingSystem/static/js/main.ac2507a0.chunk.js",
+    "main.js.map": "/BookingSystem/static/js/main.ac2507a0.chunk.js.map",
+    "runtime-main.js": "/BookingSystem/static/js/runtime-main.b854fa20.js",
+    "runtime-main.js.map": "/BookingSystem/static/js/runtime-main.b854fa20.js.map",
+    "static/css/2.8f9040a3.chunk.css": "/BookingSystem/static/css/2.8f9040a3.chunk.css",
+    "static/js/2.a90a14de.chunk.js": "/BookingSystem/static/js/2.a90a14de.chunk.js",
+    "static/js/2.a90a14de.chunk.js.map": "/BookingSystem/static/js/2.a90a14de.chunk.js.map",
+    "index.html": "/BookingSystem/index.html",
+    "precache-manifest.63f9a60080f07302920387163e720ef4.js": "/BookingSystem/precache-manifest.63f9a60080f07302920387163e720ef4.js",
+    "service-worker.js": "/BookingSystem/service-worker.js",
+    "static/css/2.8f9040a3.chunk.css.map": "/BookingSystem/static/css/2.8f9040a3.chunk.css.map",
+    "static/css/main.21ccca88.chunk.css.map": "/BookingSystem/static/css/main.21ccca88.chunk.css.map",
+    "static/js/2.a90a14de.chunk.js.LICENSE": "/BookingSystem/static/js/2.a90a14de.chunk.js.LICENSE",
+    "static/media/alone_at_sea.png": "/BookingSystem/static/media/alone_at_sea.48e4dec3.png",
+    "static/media/sunbed.jpg": "/BookingSystem/static/media/sunbed.aafc2e2f.jpg",
+    "static/media/unicorn.jpg": "/BookingSystem/static/media/unicorn.7866cc7b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b854fa20.js",
+    "static/css/2.8f9040a3.chunk.css",
+    "static/js/2.a90a14de.chunk.js",
+    "static/css/main.21ccca88.chunk.css",
+    "static/js/main.ac2507a0.chunk.js"
+  ]
+}
